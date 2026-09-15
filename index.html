@@ -92,8 +92,76 @@ section{padding:92px 0}
 
 .work{background:var(--cream)}
 .work-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
-.work-photo{background:#ece8e2;min-height:560px;overflow:hidden}
+.work-photo{background:#ece8e2;min-height:560px;overflow:visible;position:relative}
 .work-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+.photo-bubble{
+  position:absolute;
+  right:-42px;
+  top:52px;
+  width:min(360px,72%);
+  background:rgba(251,250,247,.97);
+  color:var(--navy);
+  padding:22px 24px 20px;
+  border:1px solid rgba(201,177,131,.55);
+  border-radius:22px;
+  box-shadow:0 18px 40px rgba(8,40,58,.16);
+  z-index:3;
+}
+.photo-bubble::after{
+  content:"";
+  position:absolute;
+  left:-16px;
+  top:46px;
+  width:30px;
+  height:30px;
+  background:rgba(251,250,247,.97);
+  border-left:1px solid rgba(201,177,131,.55);
+  border-bottom:1px solid rgba(201,177,131,.55);
+  transform:rotate(45deg);
+}
+.photo-bubble .bubble-kicker{
+  display:block;
+  font-size:.68rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:#9d7f4a;
+  margin-bottom:8px;
+}
+.photo-bubble h3{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(1.45rem,2.2vw,2rem);
+  line-height:1.08;
+  margin:0 0 10px;
+  font-weight:500;
+  color:var(--navy);
+}
+.photo-bubble p{
+  margin:0;
+  font-size:.92rem;
+  line-height:1.45;
+  color:#58656e;
+}
+.bubble-tags{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+.bubble-tags span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:7px 12px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--navy);
+}
 .work-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
 .work-item{background:#fff;border:1px solid var(--line);padding:22px}
 .work-item b{display:block;color:var(--champagne);font-family:Georgia,serif;font-size:1.35rem;margin-bottom:8px}
@@ -142,6 +210,8 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   .stat:nth-child(2){border-right:0}
   .stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}
   .about-grid,.city-grid,.work-grid{grid-template-columns:1fr}
+  .work-photo{overflow:visible;margin-bottom:54px}
+  .photo-bubble{right:24px;left:24px;top:auto;bottom:-42px;width:auto}
   .portrait-wrap{min-height:520px}
   .opportunity-grid{grid-template-columns:repeat(2,1fr)}
   .process-grid{grid-template-columns:1fr 1fr}
@@ -167,6 +237,13 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   .stat strong{font-size:.88rem;line-height:1.08}
   .stat span{font-size:.65rem;line-height:1.18;margin-top:3px}
   .portrait-wrap{min-height:440px;border-radius:6px 60px 6px 6px}
+  .work-photo{min-height:430px;margin-bottom:70px}
+  .photo-bubble{right:14px;left:14px;bottom:-56px;padding:18px 18px 16px;border-radius:18px}
+  .photo-bubble::after{display:none}
+  .photo-bubble h3{font-size:1.35rem}
+  .photo-bubble p{font-size:.85rem}
+  .bubble-tags{gap:6px}
+  .bubble-tags span{font-size:.66rem;padding:6px 10px}
   .city-points,.work-list,.opportunity-grid,.process-grid{grid-template-columns:1fr}
   .review-strip{grid-auto-columns:88%}
   .foot-links{flex-direction:column;gap:8px}
@@ -274,16 +351,26 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   <div class="container work-grid">
     <div class="work-photo">
       <img src="bruna-notebook.jpg" alt="Bruna Oliveira trabalhando em atendimento imobiliário">
+      <div class="photo-bubble" aria-label="Como posso te ajudar">
+        <span class="bubble-kicker">Como posso te ajudar?</span>
+        <h3>Você quer comprar, vender ou alugar?</h3>
+        <p>Eu te ajudo a encontrar o melhor caminho para o seu momento.</p>
+        <div class="bubble-tags">
+          <span>Comprar</span>
+          <span>Vender</span>
+          <span>Alugar</span>
+        </div>
+      </div>
     </div>
     <div class="work-copy">
       <div class="kicker">Meu atendimento</div>
-      <h2>Um processo próximo, claro e pensado para cada cliente.</h2>
-      <p>Meu trabalho começa entendendo o seu momento, seus objetivos e o que realmente faz sentido para você. A partir disso, faço uma curadoria de oportunidades e acompanho cada etapa com atenção, clareza e compromisso.</p>
+      <h2>Um processo claro, seguro e pensado para você.</h2>
+      <p>Entendo o seu objetivo, avalio o que faz sentido para o seu momento e conduzo cada etapa com atenção, clareza e compromisso.</p>
       <div class="work-list">
-        <div class="work-item"><b>01</b><strong>Entendimento do perfil</strong><p>Necessidade, objetivo, momento e investimento.</p></div>
-        <div class="work-item"><b>02</b><strong>Curadoria de oportunidades</strong><p>Seleção de opções alinhadas ao que você procura.</p></div>
+        <div class="work-item"><b>01</b><strong>Entender seu objetivo</strong><p>Perfil, momento, necessidade e estratégia.</p></div>
+        <div class="work-item"><b>02</b><strong>Selecionar as melhores opções</strong><p>Curadoria alinhada ao que você busca.</p></div>
         <div class="work-item"><b>03</b><strong>Visitas e negociação</strong><p>Acompanhamento próximo durante as decisões.</p></div>
-        <div class="work-item"><b>04</b><strong>Conclusão com segurança</strong><p>Suporte até a finalização da negociação.</p></div>
+        <div class="work-item"><b>04</b><strong>Finalizar com segurança</strong><p>Suporte até a conclusão do processo.</p></div>
       </div>
     </div>
   </div>
