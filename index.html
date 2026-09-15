@@ -97,7 +97,8 @@ section{padding:92px 0}
 .photo-bubble{
   position:absolute;
   right:-42px;
-  top:52px;
+  top:auto;
+  bottom:72px;
   width:min(360px,72%);
   background:rgba(251,250,247,.97);
   color:var(--navy);
@@ -111,7 +112,7 @@ section{padding:92px 0}
   content:"";
   position:absolute;
   left:-16px;
-  top:46px;
+  top:42px;
   width:30px;
   height:30px;
   background:rgba(251,250,247,.97);
@@ -148,7 +149,7 @@ section{padding:92px 0}
   flex-wrap:wrap;
   margin-top:14px;
 }
-.bubble-tags span{
+.bubble-tags a{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -161,6 +162,13 @@ section{padding:92px 0}
   text-transform:uppercase;
   font-weight:700;
   color:var(--navy);
+  transition:.2s ease;
+}
+.bubble-tags a:hover{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+  transform:translateY(-1px);
 }
 .work-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
 .work-item{background:#fff;border:1px solid var(--line);padding:22px}
@@ -243,7 +251,7 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   .photo-bubble h3{font-size:1.35rem}
   .photo-bubble p{font-size:.85rem}
   .bubble-tags{gap:6px}
-  .bubble-tags span{font-size:.66rem;padding:6px 10px}
+  .bubble-tags a{font-size:.66rem;padding:6px 10px}
   .city-points,.work-list,.opportunity-grid,.process-grid{grid-template-columns:1fr}
   .review-strip{grid-auto-columns:88%}
   .foot-links{flex-direction:column;gap:8px}
@@ -356,9 +364,9 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
         <h3>Você quer comprar, vender ou alugar?</h3>
         <p>Eu te ajudo a encontrar o melhor caminho para o seu momento.</p>
         <div class="bubble-tags">
-          <span>Comprar</span>
-          <span>Vender</span>
-          <span>Alugar</span>
+          <a href="https://www.domuvaimoveis.com.br/" target="_blank" rel="noopener">Comprar</a>
+          <a href="https://www.domuvaimoveis.com.br/" target="_blank" rel="noopener">Vender</a>
+          <a href="https://www.domuvaimoveis.com.br/" target="_blank" rel="noopener">Alugar</a>
         </div>
       </div>
     </div>
