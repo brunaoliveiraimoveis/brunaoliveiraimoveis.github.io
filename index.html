@@ -3,156 +3,311 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Bruna Oliveira — Corretora de Imóveis em Balneário Camboriú e região. Atendimento personalizado para compra, investimento, lançamentos e locação." />
+<meta name="description" content="Bruna Oliveira — Corretora de Imóveis em Balneário Camboriú. Atendimento humanizado e personalizado para morar, investir, encontrar uma segunda residência ou construir patrimônio." />
 <title>Bruna Oliveira | Corretora de Imóveis</title>
 <style>
 :root{
   --navy:#08283a;
   --navy-2:#0d3448;
-  --gold:#c5a56a;
-  --sand:#f5f0e8;
+  --navy-3:#061b28;
+  --champagne:#c9b183;
+  --sand:#f4efe7;
   --cream:#fbfaf7;
-  --ink:#13202a;
-  --muted:#66737d;
-  --white:#fff;
-  --line:#e5ded2;
+  --ivory:#f7f3ea;
+  --ink:#17232c;
+  --muted:#67737b;
+  --white:#ffffff;
+  --line:#e7dfd2;
 }
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6} a{text-decoration:none;color:inherit} img{max-width:100%;display:block}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
 .container{width:min(1180px,calc(100% - 40px));margin:auto}
-.kicker{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--gold)}
 .serif{font-family:Georgia,'Times New Roman',serif}
+.kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--champagne)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:0 22px;border-radius:999px;border:1px solid transparent;font-weight:700;letter-spacing:.02em;transition:.2s ease;cursor:pointer}
-.btn-primary{background:var(--gold);color:#17222b}.btn-primary:hover{transform:translateY(-1px);filter:brightness(1.04)}
-.btn-outline{border-color:rgba(255,255,255,.65);color:white;background:rgba(255,255,255,.06);backdrop-filter:blur(8px)}
+.btn-primary{background:var(--champagne);color:#17222b}
+.btn-primary:hover{transform:translateY(-1px);filter:brightness(1.03)}
+.btn-outline{border-color:rgba(255,255,255,.62);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(8px)}
 .btn-dark{background:var(--navy);color:#fff}
 
-header{position:absolute;inset:0 0 auto;z-index:20;padding:24px 0;color:white}
+header{position:absolute;inset:0 0 auto;z-index:20;padding:24px 0;color:#fff}
 .nav{display:flex;justify-content:space-between;align-items:center;gap:24px}
-.brand{display:flex;flex-direction:column;line-height:1}.brand strong{font-family:Georgia,serif;font-size:1.35rem;letter-spacing:.05em}.brand span{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;margin-top:7px;opacity:.8}
-.navlinks{display:flex;gap:26px;align-items:center;font-size:.9rem}.navlinks a{opacity:.9}.navlinks a:hover{opacity:1}.hamb{display:none;background:none;border:0;color:white;font-size:1.5rem}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand strong{font-family:Georgia,serif;font-size:1.12rem;letter-spacing:.14em;color:var(--ivory);font-weight:500}
+.brand span{font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;margin-top:7px;opacity:.78}
+.navlinks{display:flex;gap:26px;align-items:center;font-size:.9rem}
+.navlinks a{opacity:.9}
+.navlinks a:hover{opacity:1}
 
 .hero{position:relative;min-height:720px;display:flex;align-items:center;overflow:hidden;background:#051823}
-.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero .poster{display:none}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,21,31,.84) 0%,rgba(3,21,31,.63) 48%,rgba(3,21,31,.35) 100%)}
-.hero-content{position:relative;z-index:3;color:white;padding:150px 0 90px;max-width:760px}
-.hero h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.93;margin:10px 0 20px;font-weight:500;letter-spacing:-.03em}.hero h1 span{color:#e3c991}
-.hero h2{font-size:clamp(1.45rem,2.4vw,2.2rem);font-weight:400;margin:0 0 15px;max-width:650px}.hero p{font-size:1.02rem;max-width:660px;color:rgba(255,255,255,.82)}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:50px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.65)}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .poster{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,21,31,.87) 0%,rgba(3,21,31,.66) 49%,rgba(3,21,31,.38) 100%)}
+.hero-content{position:relative;z-index:3;color:#fff;padding:150px 0 90px;max-width:790px}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.7rem,5.1vw,4.75rem);line-height:1.02;margin:12px 0 24px;font-weight:500;letter-spacing:.075em;color:var(--ivory);text-shadow:0 2px 12px rgba(0,0,0,.22)}
+.hero h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.5rem,2.5vw,2.25rem);font-weight:400;line-height:1.22;margin:0 0 16px;max-width:700px}
+.hero p{font-size:1.02rem;max-width:670px;color:rgba(255,255,255,.82)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:48px;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.66)}
 
-.stats{background:var(--navy);color:white}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:34px 24px;border-right:1px solid rgba(255,255,255,.12)}.stat:last-child{border-right:0}.stat strong{display:block;font-family:Georgia,serif;font-size:2.25rem;color:#e2c78e;font-weight:500}.stat span{font-size:.82rem;color:rgba(255,255,255,.72)}
+.stats{background:var(--navy);color:#fff}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:32px 24px;border-right:1px solid rgba(255,255,255,.12)}
+.stat:last-child{border-right:0}
+.stat strong{display:block;font-family:Georgia,serif;font-size:1.75rem;line-height:1.15;color:var(--ivory);font-weight:500}
+.stat span{display:block;margin-top:7px;font-size:.82rem;color:rgba(255,255,255,.7)}
 
-section{padding:92px 0}.section-head{max-width:740px;margin-bottom:42px}.section-head h2{font-family:Georgia,serif;font-size:clamp(2.2rem,4vw,4rem);line-height:1.06;font-weight:500;margin:10px 0 14px}.section-head p{color:var(--muted);font-size:1.02rem}
-.about{background:var(--sand)}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.portrait-wrap{position:relative;background:linear-gradient(145deg,#e7ddd0,#fff);border-radius:4px 90px 4px 4px;overflow:hidden;min-height:580px;display:flex;align-items:flex-end;justify-content:center}.portrait-wrap img{width:96%;object-fit:contain}.portrait-badge{position:absolute;left:24px;bottom:24px;background:white;padding:18px 20px;border-left:4px solid var(--gold);box-shadow:0 12px 28px rgba(0,0,0,.12)}.portrait-badge strong{display:block;font-family:Georgia,serif;font-size:1.35rem}.about-copy h2{font-family:Georgia,serif;font-size:clamp(2.4rem,4vw,4.1rem);line-height:1.04;font-weight:500;margin:10px 0 22px}.about-copy p{color:#4c5962}.quote{font-family:Georgia,serif;font-size:1.45rem;line-height:1.35;color:var(--navy);border-left:3px solid var(--gold);padding-left:18px;margin:28px 0}
+section{padding:92px 0}
+.section-head{max-width:760px;margin-bottom:44px}
+.section-head h2,.about-copy h2,.city-copy h2,.work-copy h2{
+  font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,4vw,4rem);line-height:1.06;font-weight:500;margin:10px 0 18px
+}
+.section-head p,.about-copy p,.city-copy p,.work-copy p{color:var(--muted);font-size:1rem}
 
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{padding:30px 24px;border:1px solid var(--line);background:white;min-height:230px}.service .num{font-family:Georgia,serif;color:var(--gold);font-size:1.5rem}.service h3{font-family:Georgia,serif;font-size:1.55rem;font-weight:500;margin:28px 0 10px}.service p{font-size:.92rem;color:var(--muted)}
+.about{background:var(--sand)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.portrait-wrap{position:relative;background:linear-gradient(145deg,#e9e1d7,#fff);border-radius:8px 100px 8px 8px;overflow:hidden;min-height:610px;display:flex;align-items:flex-end;justify-content:center}
+.portrait-wrap img{width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.portrait-badge{position:absolute;left:24px;bottom:24px;background:#fff;padding:18px 20px;border-left:4px solid var(--champagne);box-shadow:0 12px 28px rgba(0,0,0,.10)}
+.portrait-badge strong{display:block;font-family:Georgia,serif;font-size:1.28rem}
+.portrait-badge span{font-size:.8rem;color:var(--muted)}
+.quote{font-family:Georgia,serif;font-size:1.36rem;line-height:1.42;color:var(--navy);border-left:3px solid var(--champagne);padding-left:18px;margin:28px 0}
 
-.regions{background:var(--navy);color:white}.regions .section-head p{color:rgba(255,255,255,.7)}.region-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.region-card{position:relative;min-height:330px;border:1px solid rgba(255,255,255,.15);background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.01));padding:28px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}.region-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.42))}.region-card>*{position:relative}.region-card small{color:#e0c184;text-transform:uppercase;letter-spacing:.16em}.region-card h3{font-family:Georgia,serif;font-size:2rem;margin:6px 0}.region-card p{color:rgba(255,255,255,.7);font-size:.9rem}
+.city{background:#fff}
+.city-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.city-panel{background:var(--navy);color:#fff;padding:50px;border-radius:2px}
+.city-panel .kicker{color:#e2cda2}
+.city-panel h3{font-family:Georgia,serif;font-size:clamp(2rem,3.4vw,3.5rem);line-height:1.08;font-weight:500;margin:10px 0 18px}
+.city-panel p{color:rgba(255,255,255,.75);margin:0}
+.city-points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.city-point{border-top:1px solid rgba(255,255,255,.18);padding-top:16px}
+.city-point strong{display:block;font-family:Georgia,serif;font-size:1.15rem}
+.city-point span{font-size:.82rem;color:rgba(255,255,255,.65)}
 
-.properties{background:#fff}.prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.prop{border:1px solid var(--line);background:var(--cream)}.prop-img{height:230px;background:linear-gradient(135deg,#d7e3e8,#a6c0ca);position:relative;overflow:hidden}.prop-img::after{content:"IMAGEM DO IMÓVEL";position:absolute;inset:0;display:grid;place-items:center;color:#49606d;font-size:.72rem;letter-spacing:.17em}.prop-body{padding:22px}.prop-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);font-weight:700}.prop h3{font-family:Georgia,serif;font-size:1.45rem;margin:8px 0}.prop-meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.82rem}.prop .link{display:inline-block;margin-top:18px;font-weight:700;color:var(--navy)}
+.work{background:var(--cream)}
+.work-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.work-photo{background:#ece8e2;min-height:560px;overflow:hidden}
+.work-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+.work-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.work-item{background:#fff;border:1px solid var(--line);padding:22px}
+.work-item b{display:block;color:var(--champagne);font-family:Georgia,serif;font-size:1.35rem;margin-bottom:8px}
+.work-item strong{display:block;font-family:Georgia,serif;font-size:1.18rem;font-weight:500}
+.work-item p{font-size:.88rem;margin:7px 0 0;color:var(--muted)}
 
-.reviews{background:var(--sand);overflow:hidden}.review-strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(300px,1fr);gap:16px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:x mandatory}.review{scroll-snap-align:start;background:white;border:1px solid var(--line);padding:28px;min-height:280px}.stars{letter-spacing:.15em;color:#b38c46}.review p{font-family:Georgia,serif;font-size:1.12rem;line-height:1.55;color:#25323b}.review strong{display:block;margin-top:22px}.review small{color:var(--muted)}
+.opportunities{background:var(--navy);color:#fff}
+.opportunities .section-head p{color:rgba(255,255,255,.7)}
+.opportunity-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.op-card{min-height:300px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.015));padding:28px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.op-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.28))}
+.op-card>*{position:relative}
+.op-card .num{font-family:Georgia,serif;color:#e0c48e;font-size:1.45rem}
+.op-card h3{font-family:Georgia,serif;font-size:1.55rem;font-weight:500;margin:16px 0 8px}
+.op-card p{font-size:.9rem;color:rgba(255,255,255,.68)}
 
-.process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.step{padding:28px 18px;border-right:1px solid var(--line)}.step:last-child{border-right:0}.step b{color:var(--gold);font-family:Georgia,serif;font-size:1.5rem}.step h3{font-family:Georgia,serif;font-size:1.25rem;margin:24px 0 6px}.step p{font-size:.86rem;color:var(--muted)}
+.reviews{background:var(--sand);overflow:hidden}
+.review-strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(300px,1fr);gap:16px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:x mandatory}
+.review{scroll-snap-align:start;background:#fff;border:1px solid var(--line);padding:28px;min-height:280px}
+.stars{letter-spacing:.15em;color:#a9803e}
+.review p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.58;color:#25323b}
+.review strong{display:block;margin-top:22px}
+.review small{color:var(--muted)}
 
-.cta{position:relative;background:var(--navy);color:white;text-align:center}.cta .container{max-width:850px}.cta h2{font-family:Georgia,serif;font-size:clamp(2.5rem,5vw,4.8rem);font-weight:500;line-height:1.05;margin:8px 0 18px}.cta p{color:rgba(255,255,255,.72);margin-bottom:30px}
-footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.foot strong{color:white}.foot small{display:block;margin-top:6px}.foot-links{display:flex;gap:18px;flex-wrap:wrap;font-size:.88rem}
+.process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.step{padding:28px 18px;border-right:1px solid var(--line)}
+.step:last-child{border-right:0}
+.step b{color:var(--champagne);font-family:Georgia,serif;font-size:1.45rem}
+.step h3{font-family:Georgia,serif;font-size:1.2rem;margin:24px 0 6px}
+.step p{font-size:.86rem;color:var(--muted)}
 
-@media(max-width:900px){.navlinks{display:none}.hamb{display:block}.hero{min-height:660px}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}.about-grid{grid-template-columns:1fr}.portrait-wrap{min-height:470px}.services-grid{grid-template-columns:repeat(2,1fr)}.region-cards,.prop-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}.step:nth-child(2n){border-right:0}.step{border-bottom:1px solid var(--line)}.foot{flex-direction:column}}
-@media(max-width:620px){.container{width:min(100% - 28px,1180px)}section{padding:70px 0}.hero{min-height:720px}.hero-content{padding-top:130px}.hero h1{font-size:3.55rem}.hero h2{font-size:1.48rem}.hero-actions .btn{width:100%}.hero-meta{gap:10px 18px}.stats-grid{grid-template-columns:1fr 1fr}.stat{padding:24px 16px}.stat strong{font-size:1.75rem}.portrait-wrap{min-height:390px;border-radius:4px 55px 4px 4px}.services-grid,.region-cards,.prop-grid,.process-grid{grid-template-columns:1fr}.service{min-height:auto}.step{border-right:0}.review-strip{grid-auto-columns:88%}.foot-links{flex-direction:column;gap:8px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero video{display:none}.hero .poster{display:block}}
+.cta{background:var(--navy-3);color:#fff;text-align:center}
+.cta .container{max-width:860px}
+.cta h2{font-family:Georgia,serif;font-size:clamp(2.5rem,5vw,4.8rem);font-weight:500;line-height:1.05;margin:8px 0 18px}
+.cta p{color:rgba(255,255,255,.72);margin-bottom:30px}
+footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
+.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+.foot strong{color:#fff}
+.foot small{display:block;margin-top:6px}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;font-size:.88rem}
+
+@media(max-width:950px){
+  .navlinks{display:none}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}
+  .about-grid,.city-grid,.work-grid{grid-template-columns:1fr}
+  .portrait-wrap{min-height:520px}
+  .opportunity-grid{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .step:nth-child(2n){border-right:0}
+  .step{border-bottom:1px solid var(--line)}
+  .foot{flex-direction:column}
+}
+@media(max-width:620px){
+  .container{width:min(100% - 28px,1180px)}
+  section{padding:70px 0}
+  .hero{min-height:720px}
+  .hero-content{padding-top:128px}
+  .hero h1{font-size:2.4rem;letter-spacing:.055em;line-height:1.08}
+  .hero h2{font-size:1.48rem}
+  .hero-actions .btn{width:100%}
+  .hero-meta{gap:10px 18px}
+  .stats-grid{grid-template-columns:1fr}
+  .stat{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .stat:last-child{border-bottom:0}
+  .portrait-wrap{min-height:440px;border-radius:6px 60px 6px 6px}
+  .city-points,.work-list,.opportunity-grid,.process-grid{grid-template-columns:1fr}
+  .review-strip{grid-auto-columns:88%}
+  .foot-links{flex-direction:column;gap:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero video{display:none}
+  .hero .poster{display:block}
+}
 </style>
 </head>
 <body>
+
 <header>
   <div class="container nav">
-    <a class="brand" href="#inicio"><strong>BRUNA OLIVEIRA</strong><span>Corretora de imóveis</span></a>
+    <a class="brand" href="#inicio">
+      <strong>BRUNA OLIVEIRA</strong>
+      <span>Corretora de imóveis</span>
+    </a>
     <nav class="navlinks" aria-label="Navegação principal">
-      <a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#oportunidades">Oportunidades</a><a href="#avaliacoes">Avaliações</a><a class="btn btn-primary" href="https://wa.me/5547997826790" target="_blank" rel="noopener">Fale comigo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#balneario">Balneário Camboriú</a>
+      <a href="#atendimento">Atendimento</a>
+      <a href="#oportunidades">Oportunidades</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a class="btn btn-primary" href="https://wa.me/5547997826790" target="_blank" rel="noopener">Fale comigo</a>
     </nav>
   </div>
 </header>
 
 <main>
 <section class="hero" id="inicio">
-  <video autoplay muted loop playsinline poster="balneario-poster.jpg" aria-hidden="true"><source src="balneario-web.mp4" type="video/mp4"></video>
+  <video autoplay muted loop playsinline poster="balneario-poster.jpg" aria-hidden="true">
+    <source src="balneario-web.mp4" type="video/mp4">
+  </video>
   <img class="poster" src="balneario-poster.jpg" alt="Vista aérea de Balneário Camboriú">
   <div class="container hero-content">
     <div class="kicker">Balneário Camboriú • Santa Catarina</div>
-    <h1 class="serif">BRUNA <span>OLIVEIRA</span></h1>
-    <h2 class="serif">Seu próximo endereço pode ter o mar como cenário.</h2>
-    <p>Atendimento imobiliário personalizado para quem deseja morar, investir ou viver novas conquistas em Balneário Camboriú e região.</p>
+    <h1>BRUNA OLIVEIRA</h1>
+    <h2>Seu próximo endereço pode ter o mar como cenário.</h2>
+    <p>Atendimento imobiliário humanizado e personalizado para quem deseja morar, investir, encontrar uma segunda residência ou construir patrimônio em Balneário Camboriú.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#oportunidades">Conheça as oportunidades</a>
+      <a class="btn btn-primary" href="#oportunidades">Conheça as possibilidades</a>
       <a class="btn btn-outline" href="https://wa.me/5547997826790" target="_blank" rel="noopener">Fale comigo</a>
     </div>
-    <div class="hero-meta"><span>CRECI 36.396</span><span>8 anos de experiência</span><span>Gestão de Negócios Imobiliários</span></div>
+    <div class="hero-meta">
+      <span>CRECI 36.396</span>
+      <span>Atuação desde 2018</span>
+      <span>Gestão de Negócios Imobiliários</span>
+    </div>
   </div>
 </section>
 
 <div class="stats">
   <div class="container stats-grid">
-    <div class="stat"><strong>8 anos</strong><span>de experiência no mercado imobiliário</span></div>
-    <div class="stat"><strong>01</strong><span>atendimento próximo e personalizado</span></div>
-    <div class="stat"><strong>BC</strong><span>Balneário Camboriú e região</span></div>
-    <div class="stat"><strong>360°</strong><span>olhar para cada etapa da negociação</span></div>
+    <div class="stat"><strong>DESDE 2018</strong><span>Atuação no mercado imobiliário</span></div>
+    <div class="stat"><strong>ATENDIMENTO HUMANIZADO</strong><span>Próximo, consultivo e personalizado</span></div>
+    <div class="stat"><strong>BALNEÁRIO CAMBORIÚ</strong><span>Foco e vivência no mercado local</span></div>
+    <div class="stat"><strong>ACOMPANHAMENTO COMPLETO</strong><span>Do primeiro contato à conclusão</span></div>
   </div>
 </div>
 
 <section class="about" id="sobre">
   <div class="container about-grid">
     <div class="portrait-wrap">
-      <img src="bruna.png" alt="Bruna Oliveira, corretora de imóveis">
-      <div class="portrait-badge"><strong>Bruna Oliveira</strong><span>CRECI 36.396</span></div>
+      <img src="bruna-branco.png" alt="Bruna Oliveira, corretora de imóveis">
+      <div class="portrait-badge">
+        <strong>Bruna Oliveira</strong>
+        <span>CRECI 36.396</span>
+      </div>
     </div>
     <div class="about-copy">
       <div class="kicker">Sobre a Bruna</div>
       <h2>Mais do que imóveis, relações construídas com confiança.</h2>
-      <p>Ao longo de 8 anos de atuação no mercado imobiliário, tive a oportunidade de acompanhar histórias, construir relações sólidas e participar de momentos importantes na vida de muitos clientes.</p>
-      <p>Sou graduada em <strong>Gestão de Negócios Imobiliários pelo Instituto Federal de Camboriú</strong> e sigo em constante evolução, unindo experiência prática, estudo e aperfeiçoamento profissional.</p>
+      <p>Sou <strong>Bruna Oliveira</strong>, paranaense, do interior do Paraná, e escolhi <strong>Balneário Camboriú</strong> para construir minha história, atraída pela qualidade de vida e por tudo o que a cidade oferece.</p>
+      <p>Desde <strong>2018</strong>, atuo no mercado imobiliário de Balneário Camboriú, acompanhando clientes em diferentes momentos: seja para morar, investir, encontrar uma segunda residência ou construir patrimônio.</p>
+      <p>Ao longo desses anos, construí minha experiência conhecendo de perto a cidade, o mercado e, principalmente, as pessoas que fazem parte de cada negociação. Acredito que escolher um imóvel é uma decisão que vai muito além de metragem, localização ou valor: é preciso entender o momento, os objetivos e o que realmente faz sentido para cada cliente.</p>
+      <p>Sou formada em <strong>Gestão de Negócios Imobiliários pelo Instituto Federal Catarinense</strong> e sigo em constante aperfeiçoamento, unindo conhecimento, experiência prática e uma visão cada vez mais estratégica do mercado.</p>
+      <p>Hoje, vivo um novo momento à frente do meu próprio projeto e também atuando junto à <strong>Domuva Imóveis</strong>, mantendo a mesma essência que acompanha meu trabalho desde o início: <strong>seriedade, proximidade, compromisso e confiança</strong>.</p>
       <div class="quote">“O mercado imobiliário vai muito além de imóveis. Ele é feito de confiança, conexão e responsabilidade.”</div>
-      <p>Hoje inicio um novo ciclo à frente do meu próprio projeto e também atuando junto à <strong>Domuva Imóveis</strong>, mantendo a mesma essência: seriedade, compromisso, proximidade e entrega em cada atendimento.</p>
       <a class="btn btn-dark" href="https://www.instagram.com/brunaoliveira.imoveisbc/" target="_blank" rel="noopener">Conheça meu Instagram</a>
     </div>
   </div>
 </section>
 
-<section id="atuacao">
-  <div class="container">
-    <div class="section-head"><div class="kicker">Como posso ajudar</div><h2>Um atendimento pensado para o seu momento.</h2><p>Cada cliente chega com uma história, um objetivo e uma necessidade diferente. O processo começa ouvindo e só depois selecionando as oportunidades certas.</p></div>
-    <div class="services-grid">
-      <article class="service"><div class="num">01</div><h3>Compra de imóveis</h3><p>Seleção de opções alinhadas ao seu perfil, objetivos, localização e investimento.</p></article>
-      <article class="service"><div class="num">02</div><h3>Investimentos</h3><p>Oportunidades para quem busca patrimônio, potencial de valorização e rentabilidade.</p></article>
-      <article class="service"><div class="num">03</div><h3>Lançamentos</h3><p>Empreendimentos em diferentes fases para quem deseja planejar a compra com estratégia.</p></article>
-      <article class="service"><div class="num">04</div><h3>Locação & gestão</h3><p>Atendimento próximo para locação, temporada e gestão imobiliária em parceria com a Domuva.</p></article>
+<section class="city" id="balneario">
+  <div class="container city-grid">
+    <div class="city-copy">
+      <div class="kicker">Balneário Camboriú</div>
+      <h2>Uma cidade compacta no território e gigante em possibilidades.</h2>
+      <p>Balneário Camboriú reúne características que a tornam singular: infraestrutura, localização, turismo, mobilidade, gastronomia e um mercado imobiliário dinâmico, marcado por diferentes perfis de moradia, segunda residência, locação e investimento.</p>
+      <p>A cidade se destaca pela verticalização, pelos grandes empreendimentos e pela diversidade de oportunidades imobiliárias.</p>
+      <p>Foi aqui que construí minha trajetória no mercado e, desde 2018, aprendi a olhar para Balneário Camboriú não apenas como um lugar para vender imóveis, mas como um mercado formado por diferentes perfis, necessidades e objetivos.</p>
+    </div>
+    <div class="city-panel">
+      <div class="kicker">Meu olhar sobre a cidade</div>
+      <h3>Conhecimento local para decisões mais conscientes.</h3>
+      <p>Entender Balneário Camboriú vai além de conhecer bairros e empreendimentos. É compreender diferentes estilos de vida, objetivos de compra e possibilidades de investimento.</p>
+      <div class="city-points">
+        <div class="city-point"><strong>Moradia</strong><span>Escolhas alinhadas à rotina e ao estilo de vida</span></div>
+        <div class="city-point"><strong>Investimento</strong><span>Leitura de perfil, momento e estratégia patrimonial</span></div>
+        <div class="city-point"><strong>Segunda residência</strong><span>Conforto, localização e experiência no litoral</span></div>
+        <div class="city-point"><strong>Mercado local</strong><span>Vivência prática e acompanhamento próximo</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="regions">
-  <div class="container">
-    <div class="section-head"><div class="kicker">Litoral catarinense</div><h2>Onde qualidade de vida encontra oportunidade.</h2><p>Imóveis selecionados em Balneário Camboriú e regiões estratégicas do litoral, com atendimento consultivo para morar, investir ou passar temporadas.</p></div>
-    <div class="region-cards">
-      <article class="region-card"><small>Destino desejado</small><h3>Balneário Camboriú</h3><p>Infraestrutura, mar, gastronomia, mobilidade e uma das paisagens urbanas mais marcantes do país.</p></article>
-      <article class="region-card"><small>Conexão regional</small><h3>Itajaí & Praia Brava</h3><p>Estilo de vida, localização estratégica e oportunidades em uma região em constante transformação.</p></article>
-      <article class="region-card"><small>Novos ciclos</small><h3>Itapema & região</h3><p>Alternativas para quem busca novos empreendimentos, segunda residência ou diversificação patrimonial.</p></article>
+<section class="work" id="atendimento">
+  <div class="container work-grid">
+    <div class="work-photo">
+      <img src="bruna-notebook.jpg" alt="Bruna Oliveira trabalhando em atendimento imobiliário">
+    </div>
+    <div class="work-copy">
+      <div class="kicker">Meu atendimento</div>
+      <h2>Um processo próximo, claro e pensado para cada cliente.</h2>
+      <p>Meu trabalho começa entendendo o seu momento, seus objetivos e o que realmente faz sentido para você. A partir disso, faço uma curadoria de oportunidades e acompanho cada etapa com atenção, clareza e compromisso.</p>
+      <div class="work-list">
+        <div class="work-item"><b>01</b><strong>Entendimento do perfil</strong><p>Necessidade, objetivo, momento e investimento.</p></div>
+        <div class="work-item"><b>02</b><strong>Curadoria de oportunidades</strong><p>Seleção de opções alinhadas ao que você procura.</p></div>
+        <div class="work-item"><b>03</b><strong>Visitas e negociação</strong><p>Acompanhamento próximo durante as decisões.</p></div>
+        <div class="work-item"><b>04</b><strong>Conclusão com segurança</strong><p>Suporte até a finalização da negociação.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="properties" id="oportunidades">
+<section class="opportunities" id="oportunidades">
   <div class="container">
-    <div class="section-head"><div class="kicker">Oportunidades em destaque</div><h2>Imóveis para diferentes planos de vida.</h2><p>Esta seção já está pronta para receber as fotos definitivas. Enquanto isso, os cards ficam estruturados para você visualizar o formato final.</p></div>
-    <div class="prop-grid">
-      <article class="prop"><div class="prop-img"></div><div class="prop-body"><div class="prop-label">Balneário Camboriú • Centro</div><h3>Oportunidade para morar ou investir</h3><div class="prop-meta"><span>2 dormitórios</span><span>1 vaga</span><span>77,38 m²</span></div><a class="link" href="https://www.domuvaimoveis.com.br/imovel/apartamento-balneario-camboriu-centro-2-quartos-1-garagem-venda-ref-267/" target="_blank">Ver oportunidade →</a></div></article>
-      <article class="prop"><div class="prop-img"></div><div class="prop-body"><div class="prop-label">Balneário Camboriú • Centro</div><h3>Frente mar</h3><div class="prop-meta"><span>3 dormitórios</span><span>120 m²</span><span>Vista mar</span></div><a class="link" href="https://www.domuvaimoveis.com.br/imovel/apartamento-balneario-camboriu-centro-3-quartos-venda-ref-154/" target="_blank">Ver oportunidade →</a></div></article>
-      <article class="prop"><div class="prop-img"></div><div class="prop-body"><div class="prop-label">Balneário Camboriú • Centro</div><h3>Mobiliado com vista mar</h3><div class="prop-meta"><span>3 dormitórios</span><span>1 suíte</span><span>120 m²</span></div><a class="link" href="https://www.domuvaimoveis.com.br/imovel/apartamento-balneario-camboriu-centro-3-quartos-venda-ref-248/" target="_blank">Ver oportunidade →</a></div></article>
+    <div class="section-head">
+      <div class="kicker">Oportunidades alinhadas ao seu momento</div>
+      <h2>Não se trata apenas de encontrar um imóvel. Trata-se de encontrar o que faz sentido para você.</h2>
+      <p>Cada cliente tem um objetivo diferente. Por isso, meu trabalho é entender o que você busca e apresentar possibilidades alinhadas ao seu perfil, estilo de vida e planejamento.</p>
+    </div>
+    <div class="opportunity-grid">
+      <article class="op-card"><div class="num">01</div><h3>Para morar</h3><p>Imóveis selecionados para quem busca qualidade de vida, localização e um novo lugar para chamar de casa.</p></article>
+      <article class="op-card"><div class="num">02</div><h3>Para investir</h3><p>Oportunidades para quem deseja construir patrimônio com visão estratégica e decisões bem orientadas.</p></article>
+      <article class="op-card"><div class="num">03</div><h3>Segunda residência</h3><p>Possibilidades para viver o litoral com conforto, praticidade e uma escolha alinhada ao seu estilo de vida.</p></article>
+      <article class="op-card"><div class="num">04</div><h3>Construção de patrimônio</h3><p>Uma visão de longo prazo para quem deseja transformar boas escolhas imobiliárias em patrimônio.</p></article>
     </div>
   </div>
 </section>
 
 <section class="reviews" id="avaliacoes">
   <div class="container">
-    <div class="section-head"><div class="kicker">Avaliações reais</div><h2>A confiança de quem já viveu essa experiência.</h2><p>Mais do que negociações, são histórias construídas com transparência, responsabilidade e proximidade.</p></div>
+    <div class="section-head">
+      <div class="kicker">Avaliações reais</div>
+      <h2>A confiança de quem já viveu essa experiência.</h2>
+      <p>Mais do que negociações, são histórias construídas com transparência, responsabilidade e proximidade.</p>
+    </div>
     <div class="review-strip" aria-label="Depoimentos de clientes">
       <article class="review"><div class="stars">★★★★★</div><p>“Minha experiência com a Bruna foi excelente. Sua responsabilidade, comprometimento, transparência e gentileza foram fora do comum. Minhas expectativas foram todas superadas.”</p><strong>Elena Amore</strong><small>Proprietária • locação de temporada</small></article>
       <article class="review"><div class="stars">★★★★★</div><p>“Ótima imobiliária em Balneário Camboriú. Destaco o maravilhoso atendimento da corretora Bruna. Meus hóspedes elogiaram seu profissionalismo e dedicação.”</p><strong>Cliente</strong><small>Avaliação pública</small></article>
@@ -165,27 +320,46 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}.foot{displ
 
 <section>
   <div class="container">
-    <div class="section-head"><div class="kicker">Atendimento</div><h2>Do primeiro contato até a conquista.</h2><p>Um processo claro, próximo e sem complicação desnecessária.</p></div>
+    <div class="section-head">
+      <div class="kicker">Da conversa à conquista</div>
+      <h2>Um caminho claro, próximo e sem complicação desnecessária.</h2>
+      <p>O processo é conduzido com orientação e presença em cada etapa.</p>
+    </div>
     <div class="process-grid">
-      <div class="step"><b>01</b><h3>Entender</h3><p>Conversamos sobre o que você busca e o momento da compra.</p></div>
-      <div class="step"><b>02</b><h3>Selecionar</h3><p>Filtramos oportunidades alinhadas ao seu objetivo.</p></div>
-      <div class="step"><b>03</b><h3>Conhecer</h3><p>Organizamos visitas e apresentamos os detalhes importantes.</p></div>
+      <div class="step"><b>01</b><h3>Entender</h3><p>Conversamos sobre o que você busca e o seu momento.</p></div>
+      <div class="step"><b>02</b><h3>Selecionar</h3><p>Filtramos possibilidades alinhadas ao seu objetivo.</p></div>
+      <div class="step"><b>03</b><h3>Conhecer</h3><p>Organizamos visitas e apresentamos os pontos importantes.</p></div>
       <div class="step"><b>04</b><h3>Negociar</h3><p>Acompanhamento próximo na proposta e documentação.</p></div>
-      <div class="step"><b>05</b><h3>Conquistar</h3><p>Seguimos juntos até a conclusão e o pós-atendimento.</p></div>
+      <div class="step"><b>05</b><h3>Concluir</h3><p>Seguimos juntos até a finalização da negociação.</p></div>
     </div>
   </div>
 </section>
 
 <section class="cta">
-  <div class="container"><div class="kicker">Vamos conversar?</div><h2>Seu próximo imóvel começa com uma boa conversa.</h2><p>Conte o que você procura. A Bruna prepara uma seleção de oportunidades de acordo com o seu momento, objetivo e investimento.</p><a class="btn btn-primary" href="https://wa.me/5547997826790" target="_blank" rel="noopener">Falar com Bruna no WhatsApp</a></div>
+  <div class="container">
+    <div class="kicker">Vamos conversar?</div>
+    <h2>Seu próximo imóvel começa com uma boa conversa.</h2>
+    <p>Conte o que você procura. A partir do seu objetivo, preparo uma seleção de possibilidades alinhadas ao seu momento, perfil e planejamento.</p>
+    <a class="btn btn-primary" href="https://wa.me/5547997826790" target="_blank" rel="noopener">Falar com Bruna no WhatsApp</a>
+  </div>
 </section>
 </main>
 
 <footer>
   <div class="container foot">
-    <div><strong>BRUNA OLIVEIRA</strong><small>Corretora de Imóveis • CRECI 36.396</small><small>Atuação em parceria com Domuva Imóveis</small></div>
-    <div class="foot-links"><a href="https://www.instagram.com/brunaoliveira.imoveisbc/" target="_blank">Instagram</a><a href="https://www.domuvaimoveis.com.br/" target="_blank">Domuva Imóveis</a><a href="https://wa.me/5547997826790" target="_blank">WhatsApp</a></div>
+    <div>
+      <strong>BRUNA OLIVEIRA</strong>
+      <small>Corretora de Imóveis • CRECI 36.396</small>
+      <small>Atuação em Balneário Camboriú desde 2018</small>
+      <small>Em parceria com Domuva Imóveis</small>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.instagram.com/brunaoliveira.imoveisbc/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.domuvaimoveis.com.br/" target="_blank" rel="noopener">Domuva Imóveis</a>
+      <a href="https://wa.me/5547997826790" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
   </div>
 </footer>
+
 </body>
 </html>
