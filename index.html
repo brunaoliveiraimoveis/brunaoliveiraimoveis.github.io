@@ -27,6 +27,9 @@ img{max-width:100%;display:block}
 .container{width:min(1180px,calc(100% - 40px));margin:auto}
 .serif{font-family:Georgia,'Times New Roman',serif}
 .kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--champagne)}
+.hero-location{margin-bottom:14px;line-height:1.25}
+.hero-location strong{display:block;font-size:1.14rem;letter-spacing:.13em;color:var(--ivory);font-weight:700}
+.hero-location span{display:block;margin-top:4px;font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--champagne);font-weight:700}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:0 22px;border-radius:999px;border:1px solid transparent;font-weight:700;letter-spacing:.02em;transition:.2s ease;cursor:pointer}
 .btn-primary{background:var(--champagne);color:#17222b}
 .btn-primary:hover{transform:translateY(-1px);filter:brightness(1.03)}
@@ -47,7 +50,7 @@ header{position:absolute;inset:0 0 auto;z-index:20;padding:24px 0;color:#fff}
 .hero .poster{display:none}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,21,31,.87) 0%,rgba(3,21,31,.66) 49%,rgba(3,21,31,.38) 100%)}
 .hero-content{position:relative;z-index:3;color:#fff;padding:150px 0 90px;max-width:790px}
-.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.7rem,5.1vw,4.75rem);line-height:1.02;margin:12px 0 24px;font-weight:500;letter-spacing:.075em;color:var(--ivory);text-shadow:0 2px 12px rgba(0,0,0,.22)}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.55rem,4.8vw,4.45rem);line-height:1.02;margin:12px 0 24px;font-weight:500;letter-spacing:.07em;color:var(--ivory);text-shadow:0 2px 12px rgba(0,0,0,.22)}
 .hero h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.5rem,2.5vw,2.25rem);font-weight:400;line-height:1.22;margin:0 0 16px;max-width:700px}
 .hero p{font-size:1.02rem;max-width:670px;color:rgba(255,255,255,.82)}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
@@ -150,7 +153,9 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   section{padding:70px 0}
   .hero{min-height:720px}
   .hero-content{padding-top:128px}
-  .hero h1{font-size:2.4rem;letter-spacing:.055em;line-height:1.08}
+  .hero h1{font-size:2.28rem;letter-spacing:.052em;line-height:1.08}
+  .hero-location strong{font-size:1rem}
+  .hero-location span{font-size:.7rem}
   .hero h2{font-size:1.48rem}
   .hero-actions .btn{width:100%}
   .hero-meta{gap:10px 18px}
@@ -195,7 +200,7 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   </video>
   <img class="poster" src="balneario-poster.jpg" alt="Vista aérea de Balneário Camboriú">
   <div class="container hero-content">
-    <div class="kicker">Balneário Camboriú • Santa Catarina</div>
+    <div class="hero-location"><strong>BALNEÁRIO CAMBORIÚ</strong><span>Santa Catarina</span></div>
     <h1>BRUNA OLIVEIRA</h1>
     <h2>Seu próximo endereço pode ter o mar como cenário.</h2>
     <p>Atendimento imobiliário humanizado e personalizado para quem deseja morar, investir, encontrar uma segunda residência ou construir patrimônio em Balneário Camboriú.</p>
