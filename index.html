@@ -1037,6 +1037,153 @@ main > section:not([class]){background:#082334;}
   background-color:transparent !important;
 }
 
+
+/* ==========================================================
+   AJUSTE MOBILE — seção "Sobre a Bruna"
+   IMPORTANTE: estas regras só valem para celular/tablet.
+   O desktop permanece exatamente como está.
+   ========================================================== */
+@media (max-width: 768px){
+
+  section.about{
+    padding:56px 0 64px !important;
+  }
+
+  .about .container{
+    width:min(100% - 32px, 680px) !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr !important;
+    gap:34px !important;
+    align-items:center !important;
+  }
+
+  /* Foto organizada e centralizada no mobile */
+  .portrait-wrap{
+    width:min(100%, 430px) !important;
+    min-height:0 !important;
+    aspect-ratio:4 / 5 !important;
+    margin:0 auto !important;
+    border-radius:22px 72px 10px 10px !important;
+  }
+
+  .portrait-wrap img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    object-position:center bottom !important;
+  }
+
+  .portrait-badge{
+    left:16px !important;
+    bottom:16px !important;
+    padding:13px 15px !important;
+  }
+
+  .portrait-badge strong{
+    font-size:1.06rem !important;
+  }
+
+  .portrait-badge span{
+    font-size:.68rem !important;
+  }
+
+  /* Bloco de texto centralizado como conjunto */
+  .about-copy{
+    width:100% !important;
+    max-width:680px !important;
+    margin:0 auto !important;
+  }
+
+  .about-copy .kicker{
+    display:block !important;
+    text-align:center !important;
+    margin:0 0 14px !important;
+    font-size:.68rem !important;
+    letter-spacing:.20em !important;
+  }
+
+  .about-copy h2{
+    max-width:620px !important;
+    margin:0 auto 26px !important;
+    text-align:center !important;
+    font-size:clamp(2.05rem, 9vw, 2.75rem) !important;
+    line-height:1.06 !important;
+    letter-spacing:-.015em !important;
+  }
+
+  /* Mantém o texto justificado, sem hífens e sem estourar a tela */
+  .about-copy p{
+    width:100% !important;
+    margin:0 0 16px !important;
+    padding:0 !important;
+    font-size:1rem !important;
+    line-height:1.62 !important;
+    text-align:justify !important;
+    text-align-last:left !important;
+    text-justify:inter-word !important;
+    hyphens:none !important;
+    -webkit-hyphens:none !important;
+    word-break:normal !important;
+    overflow-wrap:break-word !important;
+    letter-spacing:0 !important;
+  }
+
+  .about-copy p:last-of-type{
+    margin-bottom:0 !important;
+  }
+
+  .about-copy .quote{
+    width:100% !important;
+    margin:28px 0 24px !important;
+    padding:2px 0 2px 16px !important;
+    font-size:1.15rem !important;
+    line-height:1.45 !important;
+    text-align:left !important;
+  }
+
+  .about-copy .btn{
+    display:flex !important;
+    width:max-content !important;
+    max-width:100% !important;
+    margin:0 auto !important;
+    min-height:46px !important;
+    padding:0 22px !important;
+    text-align:center !important;
+  }
+}
+
+/* Celulares mais estreitos */
+@media (max-width: 430px){
+
+  .about .container{
+    width:calc(100% - 28px) !important;
+  }
+
+  .about-copy h2{
+    font-size:2.18rem !important;
+    line-height:1.08 !important;
+    margin-bottom:24px !important;
+  }
+
+  .about-copy p{
+    font-size:.96rem !important;
+    line-height:1.62 !important;
+  }
+
+  .about-copy .quote{
+    font-size:1.08rem !important;
+  }
+
+  .portrait-wrap{
+    width:100% !important;
+    border-radius:18px 58px 8px 8px !important;
+  }
+}
+
 </style>
 </head>
 <body>
