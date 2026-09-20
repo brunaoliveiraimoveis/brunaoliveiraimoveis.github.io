@@ -1184,6 +1184,136 @@ main > section:not([class]){background:#082334;}
   }
 }
 
+
+/* ==========================================================
+   AJUSTE MOBILE FINAL
+   Somente celular/tablet — desktop permanece inalterado
+   ========================================================== */
+@media (max-width: 768px){
+
+  /* SOBRE A BRUNA — título volta para a lateral/esquerda */
+  .about-copy .kicker{
+    text-align:left !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  .about-copy h2{
+    text-align:left !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    max-width:100% !important;
+  }
+
+  /* HERO — Balneário Camboriú + Santa Catarina na mesma linha */
+  .hero-location{
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    align-items:baseline !important;
+    justify-content:center !important;
+    gap:10px !important;
+    white-space:nowrap !important;
+    width:100% !important;
+  }
+
+  .hero-location strong{
+    display:inline !important;
+    font-size:.88rem !important;
+    letter-spacing:.12em !important;
+    white-space:nowrap !important;
+  }
+
+  .hero-location span{
+    display:inline !important;
+    margin:0 !important;
+    font-size:.68rem !important;
+    letter-spacing:.14em !important;
+    white-space:nowrap !important;
+  }
+
+  /* HERO — descrição justificada no mobile */
+  .hero p{
+    width:100% !important;
+    max-width:680px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    text-align:justify !important;
+    text-align-last:left !important;
+    text-justify:inter-word !important;
+    hyphens:none !important;
+    -webkit-hyphens:none !important;
+    word-break:normal !important;
+    overflow-wrap:break-word !important;
+    font-size:.91rem !important;
+    line-height:1.68 !important;
+  }
+
+  /* OPORTUNIDADES — cards menores no mobile */
+  .opportunity-grid{
+    gap:12px !important;
+  }
+
+  .op-card{
+    min-height:0 !important;
+    height:auto !important;
+    padding:24px 22px !important;
+    justify-content:flex-start !important;
+  }
+
+  .op-card .num{
+    font-size:1.18rem !important;
+    margin-bottom:12px !important;
+  }
+
+  .op-card h3{
+    font-size:1.55rem !important;
+    line-height:1.12 !important;
+    margin:0 0 10px !important;
+  }
+
+  .op-card p{
+    font-size:.91rem !important;
+    line-height:1.55 !important;
+    margin:0 !important;
+  }
+}
+
+@media (max-width: 430px){
+
+  /* Mantém localização em uma linha mesmo nos celulares estreitos */
+  .hero-location{
+    gap:8px !important;
+  }
+
+  .hero-location strong{
+    font-size:.80rem !important;
+    letter-spacing:.10em !important;
+  }
+
+  .hero-location span{
+    font-size:.62rem !important;
+    letter-spacing:.11em !important;
+  }
+
+  .hero p{
+    font-size:.89rem !important;
+    line-height:1.66 !important;
+  }
+
+  .op-card{
+    padding:21px 20px !important;
+  }
+
+  .op-card .num{
+    margin-bottom:10px !important;
+  }
+
+  .op-card h3{
+    font-size:1.45rem !important;
+  }
+}
+
 </style>
 </head>
 <body>
