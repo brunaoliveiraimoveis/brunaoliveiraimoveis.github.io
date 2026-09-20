@@ -261,6 +261,667 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   .hero video{display:none}
   .hero .poster{display:block}
 }
+
+/* ==========================================================
+   AJUSTES VISUAIS — versão clean em azul profundo
+   ========================================================== */
+
+:root{
+  --navy:#071d2b;
+  --navy-2:#0b2b3f;
+  --navy-3:#04141f;
+  --blue-card:#0d3147;
+  --blue-card-2:#123d56;
+  --champagne:#cdb17d;
+  --sand:#0b2537;
+  --cream:#071d2b;
+  --ivory:#f7f3ea;
+  --ink:#f5f1e9;
+  --muted:#b8c3ca;
+  --white:#ffffff;
+  --line:rgba(255,255,255,.12);
+}
+
+body{
+  background:var(--navy);
+  color:var(--ivory);
+}
+
+.container{
+  width:min(1160px,calc(100% - 48px));
+}
+
+/* Cabeçalho */
+header{
+  padding:22px 0;
+  background:linear-gradient(180deg,rgba(4,20,31,.42),transparent);
+}
+.nav{
+  justify-content:center;
+}
+.navlinks{
+  justify-content:center;
+  gap:28px;
+  font-size:.84rem;
+}
+.navlinks > a:not(.btn){
+  color:rgba(255,255,255,.86);
+}
+.navlinks .btn{
+  min-height:44px;
+  padding:0 22px;
+}
+
+/* HERO — tudo centralizado e com hierarquia mais limpa */
+.hero{
+  min-height:760px;
+  align-items:center;
+  background:#061b28;
+}
+.hero::after{
+  background:
+    linear-gradient(180deg,rgba(3,17,26,.56) 0%,rgba(3,17,26,.43) 46%,rgba(3,17,26,.72) 100%);
+}
+.hero-content{
+  max-width:930px;
+  margin:0 auto;
+  padding:145px 0 100px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.hero-location{
+  margin-bottom:10px;
+}
+.hero-location strong{
+  font-size:1rem;
+  letter-spacing:.20em;
+}
+.hero-location span{
+  font-size:.68rem;
+  letter-spacing:.30em;
+  margin-top:5px;
+}
+.hero h1{
+  font-size:clamp(3rem,6vw,5.2rem);
+  line-height:.98;
+  letter-spacing:.065em;
+  margin:13px 0 22px;
+  max-width:100%;
+}
+.hero h2{
+  font-size:clamp(1.45rem,2.55vw,2.15rem);
+  line-height:1.23;
+  max-width:760px;
+  margin:0 auto 18px;
+}
+
+/* Texto menor para não disputar atenção com título e chamada */
+.hero p{
+  width:min(100%,690px);
+  max-width:690px;
+  margin:0 auto;
+  font-size:.92rem;
+  line-height:1.75;
+  color:rgba(255,255,255,.78);
+  text-align:justify;
+  text-align-last:center;
+  text-justify:inter-word;
+  hyphens:none;
+  -webkit-hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+.hero-actions{
+  justify-content:center;
+  margin-top:28px;
+}
+.hero-meta{
+  justify-content:center;
+  margin-top:42px;
+  font-size:.70rem;
+  letter-spacing:.14em;
+}
+
+/* Faixa de números */
+.stats{
+  background:#0a2739;
+  border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.stat{
+  padding:18px 20px;
+}
+.stat strong{
+  color:#fff;
+}
+.stat span{
+  color:rgba(255,255,255,.63);
+}
+
+/* Fundos do site */
+.about,
+.work,
+.reviews,
+.city,
+section:not(.hero):not(.opportunities):not(.cta):not(.regions){
+  background:var(--navy);
+}
+.about{
+  background:#082334;
+}
+.city{
+  background:#071d2b;
+}
+.work{
+  background:#0a2537;
+}
+.reviews{
+  background:#071d2b;
+}
+.opportunities{
+  background:#0a2739;
+}
+.cta{
+  background:#04141f;
+}
+
+/* Textos claros no novo fundo */
+.section-head p,
+.about-copy p,
+.city-copy p,
+.work-copy p{
+  color:var(--muted);
+}
+.section-head h2,
+.about-copy h2,
+.city-copy h2,
+.work-copy h2{
+  color:var(--ivory);
+}
+.quote{
+  color:#f0e4cd;
+}
+.work-item{
+  background:#0d3045;
+  border-color:rgba(255,255,255,.10);
+}
+.work-item p{
+  color:#aebbc3;
+}
+.process-grid{
+  border-color:rgba(255,255,255,.12);
+}
+.step{
+  border-color:rgba(255,255,255,.12);
+}
+.step p{
+  color:#aebbc3;
+}
+.review{
+  background:#0d3045;
+  border-color:rgba(255,255,255,.10);
+}
+.review p{
+  color:#e6edf0;
+}
+.review small{
+  color:#aebbc3;
+}
+
+/* SOBRE — justificado sem divisão automática por hífen */
+.about-copy p,
+.city-copy p,
+.work-copy > p,
+.section-head > p{
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:none !important;
+  -webkit-hyphens:none !important;
+  word-break:normal;
+  overflow-wrap:break-word;
+}
+
+/* Evita o efeito visual de parágrafos muito soltos */
+.about-copy p{
+  margin:0 0 12px;
+  line-height:1.58;
+}
+.about-copy p:last-of-type{
+  margin-bottom:0;
+}
+
+/* Painel cidade */
+.city-panel{
+  background:#0d3045;
+  border:1px solid rgba(255,255,255,.10);
+}
+.city-panel p{
+  color:rgba(255,255,255,.72);
+}
+
+/* ==========================================================
+   ÁREAS DE ATUAÇÃO
+   Visual próprio: cards tipográficos premium, sem copiar a
+   grade fotográfica da referência.
+   ========================================================== */
+.regions{
+  background:
+    radial-gradient(circle at 15% 10%,rgba(42,102,137,.22),transparent 34%),
+    linear-gradient(180deg,#061a28 0%,#082536 100%);
+  padding:104px 0;
+  border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.regions-head{
+  max-width:760px;
+  margin-bottom:46px;
+}
+.regions-head h2{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(2.5rem,4.8vw,4.8rem);
+  line-height:1.02;
+  font-weight:500;
+  color:var(--ivory);
+  margin:10px 0 18px;
+}
+.regions-head p{
+  max-width:680px;
+  color:#aebbc3;
+  margin:0;
+  font-size:.98rem;
+  line-height:1.7;
+}
+.regions-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+.region-card{
+  position:relative;
+  min-height:310px;
+  padding:30px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  color:#fff;
+  border:1px solid rgba(255,255,255,.12);
+  background:
+    radial-gradient(circle at 90% 10%,rgba(82,151,186,.22),transparent 34%),
+    linear-gradient(145deg,#0b2c40,#0a2232);
+  transition:transform .25s ease,border-color .25s ease,background .25s ease;
+}
+.region-card:nth-child(2){
+  background:
+    radial-gradient(circle at 82% 18%,rgba(181,150,96,.18),transparent 35%),
+    linear-gradient(145deg,#0d3147,#081f2f);
+}
+.region-card:nth-child(3){
+  background:
+    radial-gradient(circle at 15% 85%,rgba(63,124,153,.22),transparent 36%),
+    linear-gradient(145deg,#0a2638,#0d354a);
+}
+.region-card:nth-child(4){
+  background:
+    radial-gradient(circle at 88% 82%,rgba(122,165,183,.18),transparent 36%),
+    linear-gradient(145deg,#0d3044,#071f2f);
+}
+.region-card::after{
+  content:"";
+  position:absolute;
+  inset:auto -80px -120px auto;
+  width:280px;
+  height:280px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+}
+.region-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(205,177,125,.58);
+}
+.region-index{
+  position:relative;
+  z-index:2;
+  font-size:.70rem;
+  letter-spacing:.18em;
+  color:rgba(255,255,255,.52);
+}
+.region-content{
+  position:relative;
+  z-index:2;
+  max-width:460px;
+}
+.region-label{
+  display:block;
+  margin-bottom:7px;
+  color:var(--champagne);
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+}
+.region-card h3{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(2rem,3.3vw,3.15rem);
+  line-height:1.04;
+  font-weight:500;
+  margin:0 0 12px;
+}
+.region-card p{
+  max-width:430px;
+  margin:0 0 22px;
+  color:rgba(255,255,255,.68);
+  font-size:.90rem;
+  line-height:1.58;
+}
+.region-link{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:#fff;
+  font-size:.75rem;
+  font-weight:700;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.region-link b{
+  color:var(--champagne);
+  font-size:1.05rem;
+  transition:transform .2s ease;
+}
+.region-card:hover .region-link b{
+  transform:translateX(4px);
+}
+
+/* Ajustes dos elementos claros do código original */
+.portrait-wrap{
+  background:linear-gradient(145deg,#d7d1c7,#f8f5ef);
+}
+.portrait-badge{
+  color:#17232c;
+}
+.btn-dark{
+  background:var(--champagne);
+  color:#17222b;
+}
+
+/* Mobile */
+@media(max-width:950px){
+  .navlinks{
+    display:none;
+  }
+  .hero{
+    min-height:710px;
+  }
+  .hero-content{
+    padding-top:118px;
+  }
+  .regions-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:620px){
+  .container{
+    width:min(100% - 30px,1160px);
+  }
+  .hero{
+    min-height:700px;
+  }
+  .hero-content{
+    padding:112px 0 72px;
+  }
+  .hero h1{
+    font-size:2.45rem;
+    letter-spacing:.045em;
+    margin-bottom:18px;
+  }
+  .hero h2{
+    font-size:1.38rem;
+    max-width:94%;
+  }
+  .hero p{
+    width:100%;
+    max-width:100%;
+    font-size:.86rem;
+    line-height:1.68;
+    text-align:left;
+    text-align-last:auto;
+  }
+  .hero-actions{
+    width:100%;
+  }
+  .hero-actions .btn{
+    width:100%;
+  }
+  .hero-meta{
+    justify-content:center;
+    text-align:center;
+    gap:8px 16px;
+  }
+  .regions{
+    padding:76px 0;
+  }
+  .regions-head{
+    margin-bottom:30px;
+  }
+  .regions-grid{
+    grid-template-columns:1fr;
+  }
+  .region-card{
+    min-height:250px;
+    padding:24px;
+  }
+  .region-card h3{
+    font-size:2rem;
+  }
+  .about-copy p,
+  .city-copy p,
+  .work-copy > p,
+  .section-head > p{
+    text-align:left;
+  }
+}
+
+
+/* Correção final de contraste e alternância entre seções */
+section.about{background:#082334;}
+section.city{background:#071d2b;}
+section.work{background:#0a2537;}
+section.reviews{background:#071d2b;}
+main > section:not([class]){background:#082334;}
+
+
+/* ==========================================================
+   AJUSTE — CAIXAS BRANCAS
+   Feedbacks, etapas do atendimento e áreas de atuação
+   ========================================================== */
+
+/* Cards do atendimento: "Entender seu objetivo", "Selecionar..." etc. */
+.work-item{
+  background:#ffffff !important;
+  border:1px solid #e7dfd2 !important;
+  color:#17232c !important;
+  box-shadow:0 10px 28px rgba(2,20,31,.08);
+}
+.work-item strong{
+  color:#17232c !important;
+}
+.work-item p{
+  color:#67737b !important;
+}
+.work-item b{
+  color:#b4935c !important;
+}
+
+/* Feedbacks / avaliações */
+.review{
+  background:#ffffff !important;
+  border:1px solid #e7dfd2 !important;
+  color:#17232c !important;
+  box-shadow:0 10px 28px rgba(2,20,31,.08);
+}
+.review p{
+  color:#25323b !important;
+}
+.review strong{
+  color:#17232c !important;
+}
+.review small{
+  color:#67737b !important;
+}
+.review .stars,
+.stars{
+  color:#a9803e !important;
+}
+
+/* Áreas de atuação: cards das cidades em branco */
+.region-card,
+.region-card:nth-child(2),
+.region-card:nth-child(3),
+.region-card:nth-child(4){
+  background:#ffffff !important;
+  color:#17232c !important;
+  border:1px solid #e6dfd4 !important;
+  box-shadow:0 14px 36px rgba(2,20,31,.12);
+}
+
+.region-card::after{
+  border-color:rgba(8,40,58,.08) !important;
+}
+
+.region-card:hover{
+  transform:translateY(-4px);
+  border-color:#cdb17d !important;
+  box-shadow:0 18px 42px rgba(2,20,31,.16);
+}
+
+.region-index{
+  color:#9aa5ac !important;
+}
+
+.region-label{
+  color:#9d7f4a !important;
+}
+
+.region-card h3{
+  color:#08283a !important;
+}
+
+.region-card p{
+  color:#67737b !important;
+}
+
+.region-link{
+  color:#08283a !important;
+}
+
+.region-link b{
+  color:#b4935c !important;
+}
+
+
+/* ==========================================================
+   AJUSTE — Imagens de fundo nas cidades da área de atuação
+   ========================================================== */
+
+.region-card,
+.region-card:nth-child(2),
+.region-card:nth-child(3),
+.region-card:nth-child(4){
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  color:#ffffff !important;
+  border:1px solid rgba(255,255,255,.16) !important;
+  box-shadow:0 16px 40px rgba(2,20,31,.18);
+}
+
+.region-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    linear-gradient(180deg, rgba(5,22,33,.18) 0%, rgba(5,22,33,.28) 30%, rgba(5,22,33,.68) 100%);
+}
+
+.region-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(145deg, rgba(4,25,38,.08), rgba(4,25,38,.04));
+}
+
+.region-card > *{
+  position:relative;
+  z-index:2;
+}
+
+.region-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(205,177,125,.70) !important;
+  box-shadow:0 20px 48px rgba(2,20,31,.24);
+}
+
+.region-index{
+  color:rgba(255,255,255,.72) !important;
+}
+
+.region-label{
+  color:#efd19d !important;
+}
+
+.region-card h3{
+  color:#ffffff !important;
+  text-shadow:0 2px 8px rgba(0,0,0,.22);
+}
+
+.region-card p{
+  color:rgba(255,255,255,.88) !important;
+}
+
+.region-link{
+  color:#ffffff !important;
+}
+
+.region-link b{
+  color:#efd19d !important;
+}
+
+.region-balneario{
+  background-image:url('assets/balneario-camboriu.png') !important;
+  background-position:center center !important;
+}
+
+.region-praiabrava{
+  background-image:url('assets/praia-brava.png') !important;
+  background-position:center center !important;
+}
+
+.region-itajai{
+  background-image:url('assets/itajai.png') !important;
+  background-position:center center !important;
+}
+
+.region-camboriu{
+  background-image:url('assets/camboriu.png') !important;
+  background-position:center center !important;
+}
+
+@media(max-width:620px){
+  .region-card p{
+    color:rgba(255,255,255,.92) !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -269,7 +930,7 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
   <div class="container nav">
     <nav class="navlinks" aria-label="Navegação principal">
       <a href="#sobre">Sobre</a>
-      <a href="#balneario">Balneário Camboriú</a>
+      <a href="#regioes">Regiões</a>
       <a href="#atendimento">Atendimento</a>
       <a href="#oportunidades">Oportunidades</a>
       <a href="#avaliacoes">Avaliações</a>
@@ -321,13 +982,73 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
     <div class="about-copy">
       <div class="kicker">Sobre a Bruna</div>
       <h2>Mais do que imóveis, relações construídas com confiança.</h2>
-      <p style="text-align: justify; text-justify: inter-word; hyphens: auto;">Paranaense, escolhi <strong>Balneário Camboriú</strong> para construir minha história, atraída pela qualidade de vida e por tudo o que a cidade oferece.</p>
+      <p style="text-align: justify; text-justify: inter-word; hyphens: none;">Paranaense, escolhi <strong>Balneário Camboriú</strong> para construir minha história, atraída pela qualidade de vida e por tudo o que a cidade oferece.</p>
       <p>Desde <strong>2018</strong>, atuo no mercado imobiliário de Balneário Camboriú, com experiência em <strong>vendas, locação e gestão de imóveis</strong>, acompanhando clientes em diferentes momentos, seja para morar, investir, encontrar uma segunda residência ou construir patrimônio.</p>
-      <p>Ao longo desses anos, construí minha experiência conhecendo de perto a cidade, o mercado e, principalmente, as pessoas que fazem parte de cada negociação. Acredito que escolher um imóvel vai muito além de metragem, localização ou valor.</p> É preciso entender o momento, os objetivos e o que realmente faz sentido para cada cliente.</p>
+      <p>Ao longo desses anos, construí minha experiência conhecendo de perto a cidade, o mercado e, principalmente, as pessoas que fazem parte de cada negociação. Acredito que escolher um imóvel vai muito além de metragem, localização ou valor. É preciso entender o momento, os objetivos e o que realmente faz sentido para cada cliente.</p>
       <p>Sou formada em <strong>Gestão em Negócios Imobiliários pelo Instituto Federal Catarinense</strong> e sigo em constante aperfeiçoamento, unindo conhecimento, experiência prática e uma visão cada vez mais estratégica do mercado.</p>
       <p>Hoje, vivo um novo momento à frente do meu próprio projeto e também atuando junto à <strong>Domuva Imóveis</strong>, mantendo a mesma essência que acompanha meu trabalho desde o início: <strong>seriedade, proximidade, compromisso e confiança</strong>.</p>
       <div class="quote">“O mercado imobiliário vai muito além de imóveis. Ele é feito de confiança, conexão e responsabilidade.”</div>
       <a class="btn btn-dark" href="https://www.instagram.com/brunaoliveira.imoveisbc/" target="_blank" rel="noopener">Conheça meu Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="regions" id="regioes">
+  <div class="container">
+    <div class="regions-head">
+      <div class="kicker">Áreas de atuação</div>
+      <h2>O litoral certo para cada momento.</h2>
+      <p>Uma curadoria de imóveis em regiões estratégicas do litoral catarinense, com atendimento próximo e orientação em cada etapa.</p>
+    </div>
+
+    <div class="regions-grid">
+      <a class="region-card region-card-featured region-balneario"
+         href="https://www.domuvaimoveis.com.br/imoveis/filtragem/?tipo=&amp;localizacao=Balne%E1rio+Cambori%FA+%2F+SC&amp;_loc=cidade-4436&amp;busca="
+         target="_blank" rel="noopener">
+        <span class="region-index">01</span>
+        <div class="region-content">
+          <span class="region-label">Santa Catarina</span>
+          <h3>Balneário Camboriú</h3>
+          <p>Moradia, segunda residência e oportunidades em um dos mercados mais desejados do litoral.</p>
+          <span class="region-link">Ver imóveis <b>→</b></span>
+        </div>
+      </a>
+
+      <a class="region-card region-praiabrava"
+         href="https://www.domuvaimoveis.com.br/imoveis/filtragem/?tipo=&amp;localizacao=Praia+Brava+-+Itaja%ED+%2F+SC&amp;_loc=bairro-21&amp;busca="
+         target="_blank" rel="noopener">
+        <span class="region-index">02</span>
+        <div class="region-content">
+          <span class="region-label">Itajaí • SC</span>
+          <h3>Praia Brava</h3>
+          <p>Exclusividade, natureza e imóveis para quem busca um estilo de vida sofisticado à beira-mar.</p>
+          <span class="region-link">Ver imóveis <b>→</b></span>
+        </div>
+      </a>
+
+      <a class="region-card region-itajai"
+         href="https://www.domuvaimoveis.com.br/imoveis/filtragem/?tipo=&amp;localizacao=Itaja%ED+%2F+SC&amp;_loc=cidade-4534&amp;busca="
+         target="_blank" rel="noopener">
+        <span class="region-index">03</span>
+        <div class="region-content">
+          <span class="region-label">Santa Catarina</span>
+          <h3>Itajaí</h3>
+          <p>Uma cidade em expansão, com infraestrutura, mobilidade e diferentes possibilidades de investimento.</p>
+          <span class="region-link">Ver imóveis <b>→</b></span>
+        </div>
+      </a>
+
+      <a class="region-card region-camboriu"
+         href="https://www.domuvaimoveis.com.br/imoveis/filtragem/?tipo=&amp;localizacao=Cambori%FA+%2F+SC&amp;_loc=cidade-4460&amp;busca="
+         target="_blank" rel="noopener">
+        <span class="region-index">04</span>
+        <div class="region-content">
+          <span class="region-label">Santa Catarina</span>
+          <h3>Camboriú</h3>
+          <p>Espaço, crescimento e alternativas residenciais para diferentes perfis e objetivos.</p>
+          <span class="region-link">Ver imóveis <b>→</b></span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -337,14 +1058,14 @@ footer{background:#041923;color:rgba(255,255,255,.72);padding:40px 0}
     <div class="city-copy">
       <div class="kicker">Balneário Camboriú</div>
       <h2>Uma cidade compacta no território e gigante em possibilidades.</h2>
-      <p style="text-align: justify; text-justify: inter-word; hyphens: auto;">Balneário Camboriú reúne características que a tornam singular: infraestrutura, localização, turismo, mobilidade, gastronomia e um mercado imobiliário dinâmico, marcado por diferentes perfis de moradia, segunda residência, locação e investimento.</p>
+      <p style="text-align: justify; text-justify: inter-word; hyphens: none;">Balneário Camboriú reúne características que a tornam singular: infraestrutura, localização, turismo, mobilidade, gastronomia e um mercado imobiliário dinâmico, marcado por diferentes perfis de moradia, segunda residência, locação e investimento.</p>
       <p>A cidade se destaca pela verticalização, pelos grandes empreendimentos e pela diversidade de oportunidades imobiliárias.</p>
       <p>Foi aqui que construí minha trajetória no mercado e, desde 2018, aprendi a olhar para Balneário Camboriú não apenas como um lugar para vender imóveis, mas como um mercado formado por diferentes perfis, necessidades e objetivos.</p>
     </div>
     <div class="city-panel">
       <div class="kicker">Meu olhar sobre a cidade</div>
       <h3>Conhecimento local para decisões mais conscientes.</h3>
-      <p style="text-align: justify; text-justify: inter-word; hyphens: auto;">Entender Balneário Camboriú vai além de conhecer bairros e empreendimentos. É compreender diferentes estilos de vida, objetivos de compra e possibilidades de investimento.</p>
+      <p style="text-align: justify; text-justify: inter-word; hyphens: none;">Entender Balneário Camboriú vai além de conhecer bairros e empreendimentos. É compreender diferentes estilos de vida, objetivos de compra e possibilidades de investimento.</p>
       <div class="city-points">
         <div class="city-point"><strong>Moradia</strong><span>Escolhas alinhadas à rotina e ao estilo de vida</span></div>
         <div class="city-point"><strong>Investimento</strong><span>Leitura de perfil, momento e estratégia patrimonial</span></div>
