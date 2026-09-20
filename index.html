@@ -1314,6 +1314,199 @@ main > section:not([class]){background:#082334;}
   }
 }
 
+
+/* ==========================================================
+   AJUSTE MOBILE — HERO conforme referência
+   SOMENTE MOBILE. Desktop permanece inalterado.
+   ========================================================== */
+@media (max-width: 768px){
+
+  /* O conteúdo do topo volta a trabalhar alinhado à esquerda */
+  .hero-content{
+    align-items:stretch !important;
+    text-align:left !important;
+  }
+
+  /* Balneário Camboriú e Santa Catarina: um embaixo do outro */
+  .hero-location{
+    display:block !important;
+    width:100% !important;
+    text-align:left !important;
+    white-space:normal !important;
+    margin-bottom:16px !important;
+  }
+
+  .hero-location strong{
+    display:block !important;
+    white-space:normal !important;
+    font-size:.94rem !important;
+    letter-spacing:.12em !important;
+    line-height:1.15 !important;
+  }
+
+  .hero-location span{
+    display:block !important;
+    white-space:normal !important;
+    margin-top:5px !important;
+    font-size:.68rem !important;
+    letter-spacing:.17em !important;
+    line-height:1.15 !important;
+  }
+
+  /* Somente BRUNA OLIVEIRA fica centralizado */
+  .hero h1{
+    width:100% !important;
+    text-align:center !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  /* Chamada alinhada à esquerda */
+  .hero h2{
+    width:100% !important;
+    max-width:100% !important;
+    text-align:left !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    white-space:normal !important;
+  }
+
+  /* Texto de apoio também alinhado à esquerda, como na referência */
+  .hero p{
+    width:100% !important;
+    max-width:100% !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    text-align:left !important;
+    text-align-last:left !important;
+    hyphens:none !important;
+    -webkit-hyphens:none !important;
+    word-break:normal !important;
+    overflow-wrap:break-word !important;
+  }
+}
+
+@media (max-width: 430px){
+  .hero-location strong{
+    font-size:.88rem !important;
+  }
+
+  .hero-location span{
+    font-size:.64rem !important;
+  }
+}
+
+
+/* ==========================================================
+   AJUSTE FINAL DO HERO — DESKTOP + MOBILE
+   Referência: localização e textos à esquerda;
+   apenas "BRUNA OLIVEIRA" centralizado.
+   ========================================================== */
+
+.hero-content{
+  align-items:flex-start !important;
+  text-align:left !important;
+}
+
+/* Balneário Camboriú + Santa Catarina: um embaixo do outro */
+.hero-location{
+  display:block !important;
+  width:100% !important;
+  text-align:left !important;
+  white-space:normal !important;
+  margin-bottom:16px !important;
+}
+
+.hero-location strong{
+  display:block !important;
+  white-space:normal !important;
+  font-size:1.05rem !important;
+  letter-spacing:.14em !important;
+  line-height:1.15 !important;
+}
+
+.hero-location span{
+  display:block !important;
+  white-space:normal !important;
+  margin-top:5px !important;
+  font-size:.74rem !important;
+  letter-spacing:.18em !important;
+  line-height:1.15 !important;
+}
+
+/* Somente o nome fica centralizado */
+.hero h1{
+  width:100% !important;
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* Chamada alinhada à esquerda */
+.hero h2{
+  width:100% !important;
+  max-width:760px !important;
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  white-space:normal !important;
+}
+
+/* Texto de apoio alinhado à esquerda */
+.hero p{
+  width:100% !important;
+  max-width:690px !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  text-align:left !important;
+  text-align-last:left !important;
+  hyphens:none !important;
+  -webkit-hyphens:none !important;
+  word-break:normal !important;
+  overflow-wrap:break-word !important;
+}
+
+/* Botões e informações acompanham o alinhamento à esquerda */
+.hero-actions{
+  justify-content:flex-start !important;
+}
+
+.hero-meta{
+  justify-content:flex-start !important;
+  text-align:left !important;
+}
+
+/* Mobile: mantém a mesma composição, só reduz proporcionalmente */
+@media (max-width: 768px){
+  .hero-location strong{
+    font-size:.94rem !important;
+    letter-spacing:.12em !important;
+  }
+
+  .hero-location span{
+    font-size:.68rem !important;
+    letter-spacing:.17em !important;
+  }
+
+  .hero h2{
+    max-width:100% !important;
+  }
+
+  .hero p{
+    max-width:100% !important;
+  }
+}
+
+@media (max-width: 430px){
+  .hero-location strong{
+    font-size:.88rem !important;
+  }
+
+  .hero-location span{
+    font-size:.64rem !important;
+  }
+}
+
 </style>
 </head>
 <body>
